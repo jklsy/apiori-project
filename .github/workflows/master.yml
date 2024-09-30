@@ -15,8 +15,7 @@ jobs:
     # This next block allows you to run this ENTIRE job on different python versions
     strategy:
       matrix:
-        #python-version: ["3.7", "3.8", "3.9", "3.10", "3.11"]
-        python-version: ["3.8"]
+        python-version: ["3.9"]
 
     # Steps are run in sequence in this job. If one step fails, the entire job fails.
     steps:
