@@ -11,7 +11,6 @@ jobs:
   testing:
 
     # runs-on indicates which GitHub "Runners" will run this CICD pipeline
-    # For all CSE-2102 repos, just use the following line as is
     runs-on: ubuntu-latest
     # This next block allows you to run this ENTIRE job on different python versions
     strategy:
@@ -28,10 +27,7 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Install mock
-        run: |
-          python -m pip install --upgrade pip
-          pip install mock
+    
       # Pytest is for unit testing your python code. Use this block as is to 
       # install pytest in the Docker container running the job
       - name: Install pytest
