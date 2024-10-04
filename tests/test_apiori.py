@@ -1,27 +1,13 @@
-import unittest
-import sys
-import os
+from src import load_data, prune, apriori
 
-# Add the src directory to the Python path
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
+def test_load_data():
+    # Test load_data function
+    pass
 
-from apiori import load_data, prune, apriori
+def test_prune():
+    # Test prune function
+    pass
 
-
-class TestAprioriAlgorithm(unittest.TestCase):
-    
-    def test_load_data(self):
-        # Test load_data function
-        pass
-    
-    def test_prune(self):
-        # Test prune function
-        pass
-    
-    def test_apriori(self):
-        # Test apriori function
-        pass
-
-
-if __name__ == '__main__':
-    unittest.main()
+def test_apriori():
+    # Test apriori function
+    pass
