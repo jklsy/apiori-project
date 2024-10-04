@@ -11,3 +11,6 @@ def test_prune():
 def test_apriori():
     # Test apriori function
     pass
+
+if __name__ == '__main__':
+    pass
